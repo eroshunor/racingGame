@@ -16,6 +16,7 @@ public class App
         car.color = "blue";
         car.doorCount = 4;
         car.mileage = 9.5;
+        car.fuelLevel = 50;
         car.running = true;
 
 
@@ -24,6 +25,7 @@ public class App
         car1.color = "green";
         car1.doorCount = 4;
         car1.mileage = 8;
+        car1.fuelLevel = 60;
         car1.running = true;
 
         Car car3 = car;
@@ -53,9 +55,10 @@ public class App
 
         System.out.println("With the below engine:");
         System.out.println(car.engine.manufacturer);
+//ctr P +hint
+        double distance = car.accelerate(60, 0.5);
 
-
-
+        System.out.println("Distance in App.Main " + distance);
         }
 
 
