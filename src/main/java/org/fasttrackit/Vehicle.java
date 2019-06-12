@@ -13,5 +13,8 @@ public class Vehicle {
     double traveledDistance;
     LocalDate createdDate;
 
+    public double accelerate(double speed, double duration){
 
+        return 4.5565;
+    }
 }
