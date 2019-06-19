@@ -4,6 +4,12 @@ import java.time.LocalDate;
 
 public class Vehicle {
 
+    private static int totalCount;
+
+    public Vehicle(){
+        totalCount++;
+    }
+
     private String name;
     private double mileage;
     private String color;
@@ -12,6 +18,11 @@ public class Vehicle {
     private double fuelLevel;
     private double traveledDistance;
     private LocalDate createdDate;
+
+
+    public static int getTotalCount() {
+        return totalCount;
+    }
 
     public String getName() {
         return name;
@@ -96,7 +107,6 @@ public class Vehicle {
         System.out.println("Remaningin fuel: " + fuelLevel + " l.");
 
         return distance;
-
 
     }
 }
