@@ -88,7 +88,6 @@ public class App {
         System.out.println("Total car number: " + car.getTotalCount());
 
 
-
     }
     }
 

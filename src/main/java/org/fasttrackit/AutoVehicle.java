@@ -9,5 +9,7 @@ public class AutoVehicle extends Vehicle{
         this.engine = engine;
 
     }
-
+    public AutoVehicle() {
+        this(new Engine());
+    }
 }
