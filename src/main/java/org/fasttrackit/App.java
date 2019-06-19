@@ -11,7 +11,11 @@ public class App
 
     public static void main( String[] args )
     {
-        Car car = new Car();
+        Engine engine = new Engine();
+        engine.manufacturer = "Renault";
+        engine.capacity = 3;
+
+        Car car = new Car(engine);
         car.name = "Dacia";
         car.color = "blue";
         car.doorCount = 4;
@@ -20,7 +24,7 @@ public class App
         car.running = true;
 
 
-        Car car1 = new Car();
+        Car car1 = new Car(new Engine());
         car1.name = "Volvo";
         car1.color = "green";
         car1.doorCount = 4;
@@ -45,9 +49,7 @@ public class App
 
             //engine
 
-        Engine engine = new Engine();
-        engine.manufacturer = "Renault";
-        engine.capacity = 3;
+
 
         //System.out.println(engine.manufacturer);
 

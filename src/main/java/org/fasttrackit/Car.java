@@ -4,10 +4,11 @@ import java.time.LocalDate;
 
 
 //inheritance or "is-a " relationship
-public class Car extends Vehicle{
+public class Car extends AutoVehicle{
 
-   Engine engine;
    int doorCount;
 
-
+   public Car(Engine engine) {
+      super(engine);
+   }
 }
