@@ -112,7 +112,24 @@ public class Vehicle {
         this.createdDate = createdDate;
     }
 
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", mileage=" + mileage +
+                ", color='" + color + '\'' +
+                ", maxSpeed=" + maxSpeed +
+                ", running=" + running +
+                ", fuelLevel=" + fuelLevel +
+                ", traveledDistance=" + traveledDistance +
+                ", createdDate=" + createdDate +
+                '}';
+    }
+
     public static int getTotalCount() {
         return totalCount;
+
+
+        }
     }
-}
+
